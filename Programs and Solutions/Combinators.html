@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+     p>i{    /* Child not grand-child Selctor */
+         color:blue
+     }
+
+     div+p{ /* Immediate Sibling Selector */
+        color:red
+     }
+
+     span~p{  /* General Sibling Selctor */
+        color:green
+     }
+
+   </style>
+</head>
+<body>
+  <i>Hello I'm inside body only.</i>
+
+  <p> <i>Hi I'm inside p which is inside body </i>
+      <div> <i>What did you say?</i></div>
+  </p>
+
+  <div>
+       <p>Hello Im Inside div.</p>
+  </div>
+  <p> I am outside div</p>
+
+  <span>
+    <p> Inside span</p>
+  </span>
+  <p>outside span</p>
+  <p>SEcond instance of p outside span</P>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+   p:first-child{   /* P should be the first child of any element */
+        color:pink
+   }
+
+   p i:first-child{ /* i should be the first child of p */
+        color:blue
+   }
+
+   p:first-child i{  /*p should be the first child and all i inside p will be selected */
+      text-decoration:underline
+   }
+
+   p:nth-child(3){  /* all p where p are the third child */
+      background-color:red
+   }
+  </style>
+</head>
+<body>
+   <p> <i>First</i> child <i>of</i> Body </p>
+   <p>Second <i>Child</i> of <i>Body</i></p>
+   <p>I am the third child</p>
+   <p>I am the fourth child</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <script>
+       const number=[1,2,3,4,5,6,7,8];
+       const [one,two,...rest]=number; //spread(name is rest here) operator taking the rest of the values
+
+       alert(rest);
+
+       function fun(h, ...rest){ //rest operator in action
+          var result=h;
+          for(let i=0;i<rest.length;i++)
+              result+=rest[i]+ " ";
+          return result;
+       }
+       alert(fun("ram","manohar","lohiya"));
+        
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+  <form name="frm1" action="#">
+     <input type="text" name="msg">
+     <input type="button" name="btn" value="click" onClick="alter()">
+  </form>
+
+  <script>
+          function alter(){
+            document.frm1.msg.value="Enter Your Name";
+          } 
+
+          if(document.frm1.msg.value=="")
+            document.frm1.btn.onclick();
+  </script>
+
+</body>
+</html>

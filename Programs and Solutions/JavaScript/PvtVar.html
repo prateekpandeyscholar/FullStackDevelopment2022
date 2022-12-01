@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+          var count= (function outer(){
+                var x=0; //private variable
+                function inner(){
+                  x++;
+                  return x;
+                }
+           return inner;
+           })();
+     console.log(count());
+  </script>
+</body>
+</html>

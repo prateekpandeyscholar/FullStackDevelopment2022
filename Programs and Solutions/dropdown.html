@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+<head>
+    <style>
+      .abutton{
+          postion:relative;
+          background-color:lightblue;
+          display:inline-block;
+          width:10%;
+          height:5%;
+          margin:15px;
+          border:2px solid violet;
+          border-radius:9px;
+          text-align:center
+
+      }
+  
+      .b{
+          position:absolute;
+          display:none;
+
+       }
+
+      .b a{
+          display:block;
+          padding-top:15px;
+          color:red;
+          text-decoration:none;
+       }
+
+      .b a:hover{
+          color:yellow;
+       }
+
+       .abutton:hover .b{
+          display:block;
+       }
+
+    </style>
+</head>
+<body>
+   <div class="abutton"> <span>Menu</span>
+      <div class="b">
+         <a href="#">Item1</a>
+         <a href="#">Item2</a>
+         <a href="#">Item3</a>
+      </div>
+   </div>
+
+   <div class="abutton"><span>About Us</span></div>
+ 
+</body>
+</html>

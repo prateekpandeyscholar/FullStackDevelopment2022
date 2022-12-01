@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <script>
+           person=function(name,age){
+                    this.name=name;
+                    this.age=age;
+                  }
+
+          person1=new person();
+          alert(typeof(person1));
+
+          var val=new String("hello");  //you can have prop (i.e. properties with string objects, not possible with string)
+                 val1="hello";
+                 val2="hello";
+
+           alert(val==val1);
+           alert(val===val1);
+           alert(val1===val2);
+
+           alert(typeof(val1)+" "+typeof(val));
+           
+
+  </script>
+
+</body>
+</html>

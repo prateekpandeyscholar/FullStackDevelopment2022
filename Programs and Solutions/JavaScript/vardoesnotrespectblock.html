@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+   <script>
+        //var x; //due to hoisting
+        var x="happy";
+        
+        if(false){
+             var x="sad";  //var doesn't respect blocks as if no blocks are there and this statment is just redeclration.
+             alert(x);
+        }
+        alert(x);
+
+
+       
+ </script>
+</body>
+</html>

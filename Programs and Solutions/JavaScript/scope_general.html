@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+   <script>
+        var x="human";
+        function transform(){
+              var x="wolf"; //if we remove var, then result is human wolf wolf
+              alert(x);
+        }
+        alert(x);   //human
+        transform(); //wolf
+        alert(x); //human
+ </script>
+</body>
+</html>

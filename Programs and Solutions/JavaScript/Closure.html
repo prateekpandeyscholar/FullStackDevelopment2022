@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+ <script>
+       function outer(){
+         var a=10;
+         function inner(){
+           var b=20;
+           a++;
+           b++;
+           alert("a="+a+" b="+b);
+           
+         }
+         return inner;
+       }
+
+      var x=outer();
+      var y=outer();
+      x();
+      y();
+      x();
+      y();
+ </script>
+
+</body>
+</html>

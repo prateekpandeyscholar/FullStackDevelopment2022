@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+          function normal(temp){
+           alert(temp);
+          }
+
+          function special(x,callback){
+              callback(x);
+
+          }
+
+          special(3,normal);
+
+          special(5,function(y){alert(y);});
+  </script>
+</body>
+</html>

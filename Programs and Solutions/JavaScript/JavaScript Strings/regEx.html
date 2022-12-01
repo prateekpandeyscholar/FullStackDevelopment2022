@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <script>
+      var str="To be or not to be that is the question";
+      var pattern1=/be/g;   // If you remove g, only first instance of be will be replaced
+      var changed=str.replace(pattern1,"exist");
+      alert(changed);
+
+      alert(str.search(pattern1)); //returns the index of first match, returns -1 if no match
+      alert(str.match(pattern1));//returns an array of string matches, returns null if not match
+      
+      var str2=`To be or not
+                to be is the
+                question known to
+                all`;
+      var pattern2=/^to/gi;
+      alert(str2.match(pattern2));
+      
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .hoverable{
+             
+             display:inline-block;
+             border:5px solid brown;
+             z-index:1;
+             
+        }
+
+        .material{
+             position:absolute;
+             border:5px solid green;
+             display:inline-block;
+             width:10%;
+             top:25px;
+             left:45px;
+             opacity:0;
+             transition: opacity 2s;
+             z-index:-1;
+
+        }
+
+        .hoverable:hover .material{
+                        
+             
+             opacity:1;
+             transition: opacity 0s;
+             z-index:1;
+             
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="hoverable"> Click Here 
+          <span class="material">This is a clickable Text, and the detail can be found here</span>
+        
+    </div>
+    
+    <div class="hoverable"> About Us  </div>
+</body>
+</html>
